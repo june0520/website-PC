@@ -117,59 +117,6 @@ $(function(){
         }
     })
 
-    // 与我联系中的 提交表单
-    let submitForm = $('.dingyueForm')
-    let page5Btn = $('.page5Btn')
-
-    let baseUrl = 'https://bondedsite.vmh5.com/front/'
-    let params = {
-        surname: '', // 姓
-        name: '',  // 名   
-        email: '',  
-        mobile: '',
-        tel: '', 
-        demand: '', // 需求
-        instruction: '', // 报名说明会
-        relation: '', //  国家选择
-        source: 1  // 1-联系我们   2-订阅
-    }
-    page5Btn.click(function(){
-        let checkedArr = []
-        let arrChk=$("input[name='dy']:checked"); 
-       let i=0;
-       $(arrChk).each(function(){ 
-            checkedArr.push(this.value);
-            i++;
-        });
-        console.log(checkedArr.join(',').toString())
-        params.surname = submitForm.children().eq(0).val()
-        params.name = submitForm.children().eq(1).val()
-        params.email = submitForm.children().eq(2).val()
-        params.mobile = submitForm.children().eq(3).val()
-        params.tel = submitForm.children().eq(4).val()
-        params.demand = $('.section1').children().eq(0).val()
-        params.instruction = $('.section1').children().eq(1).val()
-        params.relation = checkedArr.join(',')? checkedArr.join(',').toString():'0';
-        console.log(params)
-        $.ajax({
-            type: 'POST',
-            url: baseUrl+'form',
-            headers:{
-                "Accept-Language":window.lang,
-                "Content-Type":"application/x-www-form-urlencoded"
-            },
-            data:params,
-            success: function(data, status, xhr){
-               if(data.error == 0) {
-                   alert('提交成功。Success')
-               }
-            },
-            error: function(xhr, type){
-                alert('提交失败，请重新尝试。 Fail')
-            }
-        })
-    })
-
     $('.goTop').click(function(){
         console.log("点击回到顶部")
         window.scrollTo(0,0)
