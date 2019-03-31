@@ -1,4 +1,22 @@
 $(function(){
+    var system ={
+		win : false,
+		mac : false,
+		xll : false
+		};
+	//检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    console.log(p, system)
+    //跳转语句，如果是手机访问就自动跳转到手机端wap页面
+    if(system.win||system.mac||system.xll){
+    }else{
+        window.location.href="https://june0520.github.io/website-mobile-preview/#/index";//手机端网址
+        return
+    }
+
     let next = $('.right-arrow')
     let prev = $('.left-arrow')
     let pic = $('.page1Slogan')
