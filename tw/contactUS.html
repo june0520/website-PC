@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聯繫我們</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div>
+        <header class="commonHeader">
+                <div class="w clearfix">
+                    <div class="commonlogo">
+                        <h1><a href="./index.html"></a></h1>
+                    </div>
+                    <ul class="commonnav">
+                        <li><a href="./about.html">關於信名</a></li>
+                        <li><a href="./product.html">產品以服務</a></li>
+                        <li><a href="./newActivity.html">最新活動</a></li>
+                        <li><a href="./contactUS.html" class="current">聯繫我們</a></li>
+                    </ul>
+                    <div class="commonlanguage">
+                        <div>
+                            <span>簡體中文</span>
+                            <a><img src="../images/icon-xia.png" alt="下拉箭頭"></a>
+                        </div>
+                        <ul class="langList">
+                            <a href="/index.html">簡體中文</a>
+                            <a>繁體中文</a>
+                            <a href="/en/index.html">English</a>
+                        </ul> 
+                    </div>
+                </div>   
+            </header>
+            <div class="banner">
+                <img src="../images/page-5-title.png" alt="" class="bannerPic page5">
+                <div class="commonSlogan clearfix">
+                    <h2 class="fl">以信为名</h2>
+                    <div class="greenCircle fl"></div>
+                    <p class="commonSloganText fl">您海外資產配置的專業顧問團隊</p>
+                </div>
+            </div>
+        <!-- 辦公地點模組   -->
+        <div class="locationCon">
+            <div class="w beijingCon clearfix">
+                <div class="beijing">
+                    <h3 class="beijingTitle">北京辦公地點</h3>
+                    <span class="page5-underline"></span>
+                    <ul class="contactInfoList page5-locationInfo">
+                        <li>北京市朝陽區東三環中路9號富爾大廈 地下一層 </li>
+                        <li>+86 10 8441 7018, +86 13381030553 </li>
+                        <li>liud312213@sina.com </li>
+                    </ul>
+                </div>
+                <div class="page5BlackRect"></div>
+                <img src="../images/page-5-kuang.png" alt="框" class="page5-jianbian">
+                <img src="../images/contact-map.jpg" alt="地圖" class="contact-map">
+            </div>
+            <div class="taiwan w">
+                <h3 class="taiwanTitle">臺灣辦公地點</h3>
+                <span class="page5-underline"></span>
+                <ul class="contactInfoList page5-locationInfo">
+                    <li>114 台北市內湖區行善路388號五樓</li>
+                    <li>+886 2-2791-1555 #12</li>
+                    <li>wendy@hsuanhong.com.tw</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 頁面底部模組       -->
+        <div class="contactFooter clearfix">
+            <img src="../images/“.png" alt="大引號" class="page5-yinhao">
+            <img src="../images/greenBigyinhao.png" alt="綠引號" class="page5-greenyinhao">
+            <div class="contactLeft fl clearfix">
+                <div class="conAnddingyue">
+                    <a class="contactUs" onclick="change(1)">與我聯繫
+                        <span class="zhizhen"></span>
+                    </a>
+                    <a class="subscription" onclick="change(2)">訂閱中心
+                        <span class="zhizhen"></span>
+                    </a>
+                </div>
+                <form action="" class="dingyueForm">
+                    <input type="text" placeholder="姓">
+                    <input type="text" placeholder="名">
+                    <input type="text" placeholder="電子郵箱">
+                    <input type="text" placeholder="行動電話">
+                    <input type="text" placeholder="電話">
+                </form>
+                <div class="section1">
+                    <textarea type="text" placeholder="簡述需求" ></textarea>
+                    <textarea type="text" placeholder="報名說明會" ></textarea>
+                </div>
+                <div class="section2">
+                    <p class="checkboxTitle">請選擇您關注的資訊:</p>
+                    <!--  0:無 1 :英國房產 2：德國房產 3:日本房產 4：臺灣房產 5：報稅服務 6：房產貸款服務 -->
+                    <form action="" class="radioForm">
+                        <input type="checkbox" name="dy" id="us" value="1">
+                        <label for="us">英國房產</label>
+
+                        <input type="checkbox" name="dy" id="germany" value="2">
+                        <label for="germany">德國房產</label>
+
+                        <input type="checkbox" name="dy" id="Japan" value="3">
+                        <label for="Japan">日本房產</label>
+
+                        <input type="checkbox" name="dy" id="taiwan" value="4">
+                        <label for="taiwan">臺灣房產</label>
+
+                        <input type="checkbox" name="dy" id="bs" value="5">
+                        <label for="bs">報稅服務</label>
+
+                        <input type="checkbox" name="dy" id="dk" value="6">
+                        <label for="dk">房產貸款服務</label>
+                    
+                    </form>
+                </div>
+                <button class="consulting page5Btn">提交</button>
+            </div>
+            <div class="contactRight fr">
+                <div class="sanjiaoCon">
+                        <span class="sanjiao"></span>
+                        <span class="sanjiao"></span>
+                        <span class="sanjiao"></span>
+                    </div>
+                <p class="contactRithtText pick1">如果您需要取得進一步的資訊 、 或諮詢海外房產及相關服務，請您告知 聯繫方式，我們會儘快與您聯繫。</p>
+                <p class="contactRithtText pick2">如果您需要進一步的海外房產資訊、相關服務及最新活動，請您告知聯繫 方式，我們會推送給您相關的額訊息。</p>
+            </div>
+        </div>
+    </div>  
+    <div class="goTop"></div>
+</body>
+<script>
+    window.lang='zh-CT';
+    window.source=1;
+    function change(type){
+        window.source=type;
+    }
+</script>
+</html>
+

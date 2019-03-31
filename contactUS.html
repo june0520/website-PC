@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div>
+        <header class="commonHeader">
+                <div class="w clearfix">
+                    <div class="commonlogo">
+                            <h1><a href="./index.html" style="color:white">首页</a></h1>
+                        </div>
+                    <ul class="commonnav">
+                        <li><a href="./about.html">关于我们</a></li>
+                        <li><a href="./product.html">产品以服务</a></li>
+                        <li><a href="./newActivity.html">最新活动</a></li>
+                        <li><a href="./contactUS.html" class="current">联系我们</a></li>
+                    </ul>
+                    <div class="commonlanguage">
+                        <div>
+                            <span>简体中文</span>
+                            <a><img src="./images/icon-xia.png" alt="下拉箭头"></a>
+                        </div>
+                        <ul class="langList">
+                            <a>简体中文</a>
+                            <!-- <a href="/tw/index.html">繁体中文</a>
+                            <a href="/en/index.html">English</a> -->
+                        </ul> 
+                    </div>
+                </div>   
+            </header>
+            <div class="banner">
+                <img src="./images/page-5-title.png" alt="" class="bannerPic page5">
+                <div class="commonSlogan clearfix">
+                    <h2 class="fl">精益求精</h2>
+                    <div class="greenCircle fl"></div>
+                    <p class="commonSloganText fl">您专业顾问团队，快捷、全心</p>
+                </div>
+            </div>
+        <!-- 办公地点模块   -->
+        <div class="locationCon">
+            <div class="w beijingCon clearfix">
+                <div class="beijing">
+                    <h3 class="beijingTitle">北京办公地点</h3>
+                    <span class="page5-underline"></span>
+                    <ul class="contactInfoList page5-locationInfo">
+                        <li>北京</li>
+                        <li>+86 </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="page5BlackRect"></div>
+                <img src="./images/page-5-kuang.png" alt="框" class="page5-jianbian">
+                <img src="./images/contact-map.jpg" alt="地图" class="contact-map">
+            </div>
+            <div class="taiwan w">
+                <h3 class="taiwanTitle">北京办公地点</h3>
+                <span class="page5-underline"></span>
+                <ul class="contactInfoList page5-locationInfo">
+                    <li>+86</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 页面底部模块       -->
+        <div class="contactFooter clearfix">
+            <img src="./images/“.png" alt="大引号" class="page5-yinhao">
+            <img src="./images/greenBigyinhao.png" alt="绿引号" class="page5-greenyinhao">
+            <div class="contactLeft fl clearfix">
+                <div class="conAnddingyue">
+                    <a class="contactUs" onclick="change(1)">与我联系
+                        <span class="zhizhen"></span>
+                    </a>
+                    <a class="subscription" onclick="change(2)">订阅中心
+                        <span class="zhizhen"></span>
+                    </a>
+                </div>
+                <form action="" class="dingyueForm">
+                    <input type="text" placeholder="姓">
+                    <input type="text" placeholder="名">
+                    <input type="text" placeholder="电子邮箱">
+                    <input type="text" placeholder="移动电话">
+                    <input type="text" placeholder="电话">
+                </form>
+                <div class="section1">
+                    <textarea type="text" placeholder="简述需求" ></textarea>
+                    <textarea type="text" placeholder="报名说明会" ></textarea>
+                </div>
+                <div class="section2">
+                    <p class="checkboxTitle">请选择您关注的信息:</p>
+                    <!--  0:无 1 :英国房产 2：德国房产 3:日本房产 4：台湾房产 5：报税服务 6：房产贷款服务 -->
+                    <form action="" class="radioForm">
+                        <input type="checkbox" name="dy" id="us" value="1">
+                        <label for="us">北京房产</label>
+
+                        <input type="checkbox" name="dy" id="germany" value="2">
+                        <label for="germany">上海房产</label>
+
+                        <input type="checkbox" name="dy" id="Japan" value="3">
+                        <label for="Japan">深圳房产</label>
+
+                        <input type="checkbox" name="dy" id="taiwan" value="4">
+                        <label for="taiwan">广州房产</label>
+
+                        <input type="checkbox" name="dy" id="bs" value="5">
+                        <label for="bs">报税服务</label>
+
+                        <input type="checkbox" name="dy" id="dk" value="6">
+                        <label for="dk">房产贷款服务</label>
+                    
+                    </form>·
+                </div>
+                <button class="consulting page5Btn">提交</button>
+            </div>
+            <div class="contactRight fr">
+                <div class="sanjiaoCon">
+                        <span class="sanjiao"></span>
+                        <span class="sanjiao"></span>
+                        <span class="sanjiao"></span>
+                    </div>
+                    <p class="contactRithtText pick1">如果您需要取得进一步的信息 、 或咨询海外房产及相关服务，请您告知 联系方式，我们会尽快与您联系。</p>
+                    <p class="contactRithtText pick2">如果您需要进一步的海外房产信息、相关服务及最新活动，请您告知联系 方式，我们会推送给您相关的额讯息。</p>
+            </div>
+        </div>
+    </div>  
+    <div class="goTop"></div>
+</body>
+<script>
+    window.lang='zh-CN';
+    window.source=1;
+    function change(type){
+        window.source=type;
+    }
+</script>
+</html>
